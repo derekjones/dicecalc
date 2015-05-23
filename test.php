@@ -1,9 +1,12 @@
 <?php
 
+error_reporting(E_ALL | E_STRICT);
+
 require 'src/DiceCalc/Calc.php';
 require 'src/DiceCalc/CalcSet.php';
 require 'src/DiceCalc/CalcDice.php';
 require 'src/DiceCalc/CalcOperation.php';
+require 'src/DiceCalc/Random.php';
 
 use DiceCalc\Calc as Calc;
 
