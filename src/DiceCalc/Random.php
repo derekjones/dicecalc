@@ -19,7 +19,7 @@ class Random {
             $result = $test_fn($min, $max);
         }
         else {
-            $result = rand($min, $max);
+            $result = mt_rand($min, $max);
         }
         return $result;
     }
@@ -51,4 +51,4 @@ class Random {
             return $max;
         });
     }
-} 
+}
