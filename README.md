@@ -4,19 +4,27 @@
 
 Create a new Calc class, and pass the dice expression to the constructor:
 
-	$calc = new Calc($expression);
+```php
+$calc = new Calc($expression);
+```
 
 Output the itemized interpretation of the roll:
 
-	echo $calc->infix();
+```php
+echo $calc->infix();
+```
 
 Ouptut a detailed interpretation of the roll::
 
-	echo $calc->detailed():
+```php
+echo $calc->detailed():
+```
 
 Output the result of the roll::
 
-	echo $calc();
+```php
+echo $calc();
+```
 
 ## Basic Expressions
 
@@ -113,7 +121,7 @@ Here are some common examples of how some of these features can come together fo
 * straight roll
 * reroll 1s
 * roll 4, drop the lowest
-* roll 5 drop the two lowest
+* roll 5, drop the two lowest
 * roll 2 add six
 
 |      cmd      |         Detailed         |          Infix           |          Result          |
