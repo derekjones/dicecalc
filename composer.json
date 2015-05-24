@@ -1,7 +1,6 @@
 {
     "name": "ringmaster/dicecalc",
     "description": "DiceCalc",
-    "version": "1.0.0",
     "keywords": ["dice", "dice calc", "dice calculator", "dice roller"],
     "require-dev": {
         "phpunit/phpunit": "@stable",
@@ -16,13 +15,20 @@
     "authors": [
         {
             "name": "Owen Winkler",
-            "email": "a_github@midnightcircus.com"
+            "email": "a_github@midnightcircus.com",
+            "role": "Creator"
+        },
+        {
+            "name": "Derek Jones",
+            "email": "derek@derekderekderek.com",
+            "role": "Developer"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": ">=5.4"
     },
     "autoload": {
-        "psr-0": { "DiceCalc\\": "src/" }
+        "psr-4": { "DiceCalc\\": "src/DiceCalc/" }
     }
 }
