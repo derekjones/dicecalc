@@ -1,6 +1,6 @@
 {
-    "name": "ringmaster/dicecalc",
-    "description": "DiceCalc",
+    "name": "derekjones/dicecalc",
+    "description": "DiceCalc - fork of https://github.com/ringmaster/dicecalc",
     "keywords": ["dice", "dice calc", "dice calculator", "dice roller"],
     "require-dev": {
         "phpunit/phpunit": "@stable",
