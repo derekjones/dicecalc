@@ -197,8 +197,28 @@ class Calc {
         }
     }
 
-    public function infix() {
+    public function detailed() {
         return implode(' ', $this->infix);
+    }
+
+    public function infix()
+    {
+        $result = '';
+        foreach ($this->infix as $op)
+        {
+            if ($op instanceof CalcDice)
+            {
+                $result .= $op->toString(FALSE);
+            }
+            else
+            {
+                $result .= $op;
+            }
+
+            $result .= ' ';
+        }
+
+        return trim($result);
     }
 
 }

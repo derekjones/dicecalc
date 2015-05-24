@@ -43,12 +43,12 @@ $calc = new Calc( $expression );
 
 
 <pre>
-  <?php
+<?php
 
-  echo htmlspecialchars( $expression ) . "\n";
-  echo $calc->infix();
-  echo " => ";
-  echo $calc() . "\n";
+  echo "Input: " . htmlspecialchars( $expression ) . "\n";
+  echo "Infix: " . $calc->infix() . "\n";
+  echo "Detailed: " . $calc->detailed() . "\n";
+  echo "Result: " . $calc() . "\n";
 
   ?>
 </pre>

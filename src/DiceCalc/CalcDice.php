@@ -111,7 +111,7 @@ class CalcDice extends CalcSet
         return $newval;
     }
 
-    public function __toString()
+    public function toString($include_labels = TRUE)
     {
         $out = [];
         foreach (array_keys($this->saved_values) as $key) {
@@ -133,7 +133,7 @@ class CalcDice extends CalcSet
             }
         }
 
-        $result = '[' . $this->label . ':';
+        $result = ($include_labels) ? '(' . $this->label . ': [' : '[';
         $comma = '';
         foreach ($out as $o) {
             if ($o instanceof Calc) {
@@ -144,7 +144,13 @@ class CalcDice extends CalcSet
             $comma = ' + ';
         }
         $result .= ']';
+        $result .= ($include_labels) ? ')' : '';
 
         return $result;
+    }
+
+    public function __toString()
+    {
+        return $this->toString();
     }
 }
