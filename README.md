@@ -32,7 +32,7 @@ DiceCalc supports three basic formats for defining a given die:
 
 * roll a die with *n* faces
 * roll a percentile die
-* roll a [Fudge](http://en.wikipedia.org/wiki/Fudge_(role-playing_game_system\)) die
+* roll a [Fudge](http://en.wikipedia.org/wiki/Fudge_(role-playing_game_system)) die
 
 |   cmd   |   Detailed  | Infix | Result |
 | ------- | ----------- | ----- | ------ |
